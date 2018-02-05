@@ -1,0 +1,41 @@
+#heroimage {
+  width:100%;
+  height:500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  margin: -50px 0 0 0;
+  padding: 150px 30px 200px 30px;
+  text-align: center;
+}
+
+#bannerbox {
+  background-color: rgba(255, 255, 255, .5);
+  height: 200px;
+  border-radius: 5px;
+}
+
+#bannerbox > h1 {
+  line-height: 100px;
+}
+
+.paddingTop {
+  padding-top: 25px;
+}
+
+.logos {
+  max-width: 300px;
+  max-height: 200px;
+  vertical-align: middle;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.frame {
+  height: 200px;
+  text-align: center;
+}
