@@ -12,8 +12,23 @@
   opacity: 1;
 }
 
+.classBox:hover .middle-desc {
+  opacity: 0;
+}
+
 .classBoxInterior {
   padding: 10px;
+}
+
+.middle-desc {
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .middle {

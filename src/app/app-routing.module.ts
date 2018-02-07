@@ -11,10 +11,10 @@ import {PhpIntroComponent} from './courses/php-intro/php-intro.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'classes', component: ClassListComponent },
-  { path: 'courses/websitesforbeginners', component: Web4begComponent },
-  { path: 'courses/introionic', component: IonicIntroComponent },
-  { path: 'courses/intronode', component: NodeIntroComponent },
-  { path: 'courses/introphp', component: PhpIntroComponent }
+  { path: 'courses/websitesforbeginners/:day', component: Web4begComponent },
+  { path: 'courses/introionic/:day', component: IonicIntroComponent },
+  { path: 'courses/intronode/:day', component: NodeIntroComponent },
+  { path: 'courses/introphp/:day', component: PhpIntroComponent }
 ];
 
 @NgModule({

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-node-intro',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./node-intro.component.css']
 })
 export class NodeIntroComponent implements OnInit {
-
-  constructor() { }
+  private sub: any;
+  day: number;
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.sub = this.route.params.subscribe(params => {
+      this.day = +params['day'];
+    });
   }
-
 }
