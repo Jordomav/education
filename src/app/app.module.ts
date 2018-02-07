@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+import { HighlightJsModule, HighlightJsService } from 'angular2-highlight-js';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -26,9 +27,12 @@ import { PhpIntroComponent } from './courses/php-intro/php-intro.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    HighlightJsModule,
   ],
-  providers: [],
+  providers: [
+    HighlightJsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
