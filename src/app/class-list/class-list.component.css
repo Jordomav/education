@@ -1,0 +1,47 @@
+.classBox {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.classBox:hover .middle {
+  opacity: 1;
+}
+
+.classBox:hover .middle-desc {
+  opacity: 0;
+}
+
+.classBoxInterior {
+  padding: 10px;
+}
+
+.middle-desc {
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.white {
+  color: #ffffff
+}

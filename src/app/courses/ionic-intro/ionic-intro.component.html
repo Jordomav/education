@@ -1,0 +1,24 @@
+<section class="container-fluid">
+  <h1 class="text-center">Intro to Ionic</h1>
+  <p class="text-center">Make a basic 3 page application using the Ionic Framework.</p>
+  <p class="text-center">Github repo can be found <a href="" target="_blank">here</a></p>
+</section>
+<section class="container-fluid" *ngIf="day > 14 || day < 1">
+  <h1 class="text-center">You shouldn't be here you sneaky cheater you :)</h1>
+</section>
+<section class="container-fluid" *ngIf="day === 1">
+  <h3>Day 1</h3>
+</section>
+<section class="container-fluid" *ngIf="day === 2">
+  <h3>Day 2</h3>
+</section>
+<section class="container-fluid">
+  <nav aria-label="...">
+    <ul class="pager">
+      <li *ngIf="day !== 1"><a [routerLink]="['/courses/introionic/' + (day - 1)]">Previous</a></li>
+      <li class="disabled" *ngIf="day <= 1"><a>Previous</a></li>
+      <li *ngIf="day !== 14"><a [routerLink]="['/courses/introionic/' + (day + 1)]">Next</a></li>
+      <li class="disabled" *ngIf="day >= 14"><a>Next</a></li>
+    </ul>
+  </nav>
+</section>

@@ -1,0 +1,29 @@
+<section class="container-fluid">
+  <h1 class="text-center">Websites for beginners</h1>
+  <p class="text-center">Learn to build a basic one page website using HTML and CSS principles.</p>
+  <p class="text-center">Github repo can be found <a href="https://github.com/Jordomav/websites-for-beginners" target="_blank">here</a>.</p>
+</section>
+<section class="container-fluid" *ngIf="part > 14 || part < 1">
+  <h1 class="text-center">You shouldn't be here you sneaky cheater you :)</h1>
+</section>
+<section class="container-fluid" *ngIf="part === 1">
+  <app-web-part1></app-web-part1>
+</section>
+<section class="container-fluid" *ngIf="part === 2">
+  <h3 class="text-center">Part 2</h3>
+
+</section>
+<section class="container-fluid" *ngIf="part === 3">
+  <h3 class="text-center">Part 3</h3>
+</section>
+<section class="container-fluid">
+  <nav aria-label="...">
+    <ul class="pager">
+      <li *ngIf="part !== 1"><a [routerLink]="['/courses/websitesforbeginners/' + (part - 1)]">Previous</a></li>
+      <li class="disabled" *ngIf="part <= 1"><a>Previous</a></li>
+      <li>{{part}}/14</li>
+      <li *ngIf="part !== 14"><a [routerLink]="['/courses/websitesforbeginners/' + (part + 1)]">Next</a></li>
+      <li class="disabled" *ngIf="part >= 14"><a>Next</a></li>
+    </ul>
+  </nav>
+</section>
