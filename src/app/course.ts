@@ -5,4 +5,5 @@ export class Course {
   color: string;
   tags: any;
   route: string;
+  status: boolean;
 }

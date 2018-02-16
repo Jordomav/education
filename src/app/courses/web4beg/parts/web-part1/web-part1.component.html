@@ -1,0 +1,135 @@
+<h3 class="text-center">Part 1</h3>
+<div class="row">
+  <h4 class="text-center">What is HTML and CSS?</h4>
+  <hr>
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <p class="text-center">HTML - Hyper Text Markup Language</p>
+    <section [innerHTML]="htmlExample" highlight-js-content=".highlight"></section>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <p class="text-center">CSS - Cascading Style Sheets</p>
+    <section [innerHTML]="cssExample" highlight-js-content=".highlight"></section>
+  </div>
+</div>
+<div class="row">
+  <h4 class="text-center">HTML</h4>
+  <hr>
+  <div class="col-xs-12 col-sm-12 col-mg-6 col-lg-6">
+    <p class="text-center">HTML is the structure of the web. HTML elements (shown to the right) build an HTML page. These elements are built using tags (also shown to the right). When the HTML page is shown the tags and elements are not shown, but instead the content inside of them. A few examples of commonly used tags can be seen to the right.</p>
+    <p class="text-center">Tags are made up of "carrots" an opening carrot &lt; and a closing carrot &gt;. A tag also has an opening &lt;tag&gt; and closing &lt;/tag&gt;</p>
+    <p class="text-center">There are very few tags that are self closing a few examples are shown to the right.</p>
+    <p class="text-center">A comment in html looks like <code>&lt;!--- this ---&gt;</code>. Having comments in your HTML is very important, these are used to leave notes for yourself and any other developers that look at your code.</p>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-mg-6 col-lg-6">
+    <p>Opening and closing tags-</p>
+    <section [innerHTML]="tagExample" highlight-js-content=".highlight"></section>
+    <p>Commonly used tags-</p>
+    <section [innerHtml]="commonTags" highlight-js-content=".highlight"></section>
+    <p>Self-closing tags-</p>
+    <section [innerHtml]="closingTags" highlight-js-content=".highlight"></section>
+  </div>
+</div>
+<div class="row">
+  <h4 class="text-center">CSS</h4>
+  <hr>
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <section [innerHtml]="cssExample" highlight-js-content=".highlight"></section>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+    <p class="text-center">CSS is the design of websites. Without CSS websites would look bland and boring, an example of this will be shown later.</p>
+    <p class="text-center">CSS is made up of <code>class</code>'s and <code>id</code>'s. <code>Id</code>'s are meant to be used once and only once in the website. <code>Class</code>'s are meant to be used multiple times thought the website.</p>
+    <p class="text-center">To apply the <code>class</code> or <code>id</code> to your HTML you must reference it in the tag like so <code>&lt;h1 class="red"&gt;RED&lt;/h1&gt;</code></p>
+  </div>
+</div>
+<div class="row">
+  <h3 class="text-center">Resources</h3>
+  <p class="text-center">Great resources for learning HTML and CSS. I will be referencing these from time to time throughout the course.</p>
+  <hr>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    <h4 class="text-center"><a href="https://www.w3schools.com/" target="_blank">W3schools</a></h4>
+    <p class="text-center">Great overall resource for all things code.</p>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    <h4 class="text-center"><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></h4>
+    <p class="text-center">Get help, tips and tricks from other developers on these user maintained forums.</p>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    <h4 class="text-center"><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></h4>
+    <p class="text-center">Exceedingly useful tips and tricks for using CSS.</p>
+  </div>
+</div>
+<div class="row">
+  <h3 class="text-center">Tools you'll need</h3>
+  <hr>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+    <img src="/assets/imgs/chrome.png" alt="Google Chrome" class="img-responsive sm-border tool-imgs">
+    <p class="text-center"><a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a></p>
+    <p class="text-center">Where this is not a necessity it is highly recommended because of its various developer tools.</p>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+    <img src="/assets/imgs/editor.png" alt="Editor" class="img-responsive sm-border tool-imgs">
+    <ul>
+      <li class="list-style">Editor</li>
+      <li class="list-style"><a href="https://atom.io/" target="_blank">Atom</a></li>
+      <li class="list-style"><a href="https://www.sublimetext.com/" target="_blank">Sublime</a></li>
+      <li class="list-style"><a href="https://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a> (My personal favorite)</li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <h4 class="text-center">Writing our first bit of code...</h4>
+  <hr>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+    <section [innerHtml]="headerExamples" highlight-js-content=".highlight"></section>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+    <p class="text-center desc-font">Headers, like their name implies, are meant to act as titles. They vary from 1 to 5, one being the biggest and five being the smallest. We want to use these sparingly, however, and only a few should be on each page.</p>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+    <p class="text-center desc-font">Other tags that you will commonly see are <code>p</code>, or paragraph tags. These are used to display most information, and we can use CSS (as we will do in the next part) to resize the tags. There are also <code>a</code>, or anchor tags. These are used for linking to other pages, whether that be a page on your site or another website all together. Another common one that we will be using is <code>ul</code>, or unordered list and <code>li</code>. We can use this to display lists of information, and we will be using this to create our navigation.</p>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+    <section [innerHtml]="commonTagExamples" highlight-js-content=".highlight"></section>
+  </div>
+</div>
+<div class="row">
+  <h4 class="text-center">The HTML structure</h4>
+  <hr>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+    <section [innerHtml]="htmlExample" highlight-js-content=".highlight"></section>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+    <ul>
+      <li class="struc-body"><code>&lt;!doctype html&gt;</code> - defines to the webpage, as the name implies, what type of file is.</li>
+      <li class="struc-body"><code>&lt;head&gt;</code> - contains all information that our webpage will need to know before loading it and rendering it into the view.</li>
+      <li class="struc-body"><code>&lt;meta&gt;</code> - gives all information about other data that the page may need.</li>
+      <li class="struc-body"><code>&lt;body&gt;</code> - Is where the bulk of our code will go. Everything that you see on a website is contained inside this tag.</li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <h4 class="text-center">Let's add some style to that page</h4>
+  <hr>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-9">
+    <p class="text-center">CSS Syntax</p>
+    <ul>
+      <li class="struc-body"><code>body</code> - Is the selector, this is how we tell the CSS what element we want to apply our styling to.</li>
+      <li class="struc-body"><code>background-color: red;</code> - Is the declaration, this is where the styling that we want use goes.</li>
+      <li class="struc-body"><code>background-color</code> - Is the property, this is the different CSS "properties" that are available to us. You can look at more
+        <a href="http://web.simmons.edu/~grabiner/comm244/weekthree/css-basic-properties.html" target="_blank">here</a>.</li>
+      <li class="struc-body"><code>red</code> - Is the value, this is what we want to apply to the property that is mentioned before it.</li>
+      <li class="struc-body"><code>:</code> separates the property and value. <code>;</code> separates each of our property and value pairs.</li>
+    </ul>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+    <section [innerHtml]="firstCss" highlight-js-content=".highlight"></section>
+  </div>
+</div>

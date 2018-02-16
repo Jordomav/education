@@ -4,8 +4,11 @@
       <div class="classBoxInterior">
         <h3 class="white text-center">{{c.name}}</h3>
       </div>
-      <div class="middle">
+      <div class="middle" *ngIf="c.status === true">
         <button class="btn" [routerLink]="[c.route]">View</button>
+      </div>
+      <div class="middle" *ngIf="c.status === false">
+        <p>Coming Soon!</p>
       </div>
       <div class="middle-desc">
         <p class="white">{{c.desc}}</p>

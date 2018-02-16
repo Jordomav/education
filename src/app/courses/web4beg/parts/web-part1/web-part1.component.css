@@ -1,0 +1,23 @@
+.desc-font {
+  font-size: 15px;
+}
+
+.sm-border {
+  border: 1px #b7b7b7 solid;
+}
+
+.tool-imgs {
+  max-height: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.list-style {
+  list-style-type: none;
+  text-align: center;
+}
+
+.struc-body {
+  font-size: 17px;
+  padding-top: 20px;
+}
