@@ -13,6 +13,7 @@ import { IonicIntroComponent } from './courses/ionic-intro/ionic-intro.component
 import { NodeIntroComponent } from './courses/node-intro/node-intro.component';
 import { PhpIntroComponent } from './courses/php-intro/php-intro.component';
 import { WebPart1Component } from './courses/web4beg/parts/web-part1/web-part1.component';
+import { RouteNotFoundComponent } from './route-not-found/route-not-found.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { WebPart1Component } from './courses/web4beg/parts/web-part1/web-part1.c
     IonicIntroComponent,
     NodeIntroComponent,
     PhpIntroComponent,
-    WebPart1Component
+    WebPart1Component,
+    RouteNotFoundComponent
   ],
   imports: [
     BrowserModule,
