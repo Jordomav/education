@@ -12,6 +12,7 @@ import {RouteNotFoundComponent} from './route-not-found/route-not-found.componen
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'classes', component: ClassListComponent },
+  { path: 'classes/:tags', component: ClassListComponent },
   { path: 'courses/websitesforbeginners/:part', component: Web4begComponent },
   { path: 'courses/introionic/:day', component: IonicIntroComponent },
   { path: 'courses/intronode/:day', component: NodeIntroComponent },

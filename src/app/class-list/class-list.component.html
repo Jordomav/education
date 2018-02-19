@@ -8,11 +8,12 @@
         <button class="btn" [routerLink]="[c.route]">View</button>
       </div>
       <div class="middle" *ngIf="c.status === false">
-        <p>Coming Soon!</p>
+        <p class="white">Coming Soon!</p>
       </div>
       <div class="middle-desc">
         <p class="white">{{c.desc}}</p>
       </div>
     </div>
   </div>
+  <h1 class="text-center" *ngIf="!classes">No classes found with keyword {{tags}}</h1>
 </section>
