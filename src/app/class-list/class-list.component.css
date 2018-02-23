@@ -1,19 +1,16 @@
 .classBox {
-  width: 300px;
-  height: 200px;
+  width: 325px;
+  height: 275px;
   margin: auto;
-  margin-top: 20px;
-  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 2px;
   transition: .5s ease;
   backface-visibility: hidden;
 }
 
 .classBox:hover .middle {
   opacity: 1;
-}
-
-.classBox:hover .middle-desc {
-  opacity: 0;
 }
 
 .classBoxInterior {
@@ -35,7 +32,7 @@
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);

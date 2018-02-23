@@ -7,14 +7,17 @@ import {Web4begComponent} from './courses/web4beg/web4beg.component';
 import {IonicIntroComponent} from './courses/ionic-intro/ionic-intro.component';
 import {NodeIntroComponent} from './courses/node-intro/node-intro.component';
 import {PhpIntroComponent} from './courses/php-intro/php-intro.component';
+import {RouteNotFoundComponent} from './route-not-found/route-not-found.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'classes', component: ClassListComponent },
+  { path: 'classes/:tags', component: ClassListComponent },
   { path: 'courses/websitesforbeginners/:part', component: Web4begComponent },
   { path: 'courses/introionic/:day', component: IonicIntroComponent },
   { path: 'courses/intronode/:day', component: NodeIntroComponent },
-  { path: 'courses/introphp/:day', component: PhpIntroComponent }
+  { path: 'courses/introphp/:day', component: PhpIntroComponent },
+  { path: '**', component: RouteNotFoundComponent }
 ];
 
 @NgModule({
