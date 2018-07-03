@@ -8,12 +8,13 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class IonicIntroComponent implements OnInit {
   private sub: any;
-  day: number;
+  part: number;
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
-      this.day = +params['day'];
+      this.part = +params['part'];
+      console.log(this.part);
     });
   }
 }
