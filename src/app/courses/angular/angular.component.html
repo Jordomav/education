@@ -1,3 +1,55 @@
-<p>
-  angular works!
-</p>
+<section class="container-fluid">
+  <h1 class="text-center">Introduction to Angular</h1>
+  <p class="text-center">Make amazing web apps with HTML, CSS, and TypeScript</p>
+  <p class="text-center">Github repo can be found <a href="https://github.com/Jordomav/angular-intro" target="_blank">here</a>.</p>
+</section>
+<section class="container-fluid" *ngIf="part > 12 || part < 1">
+  <h1 class="text-center">You shouldn't be here you sneaky cheater you :)</h1>
+</section>
+<section class="container-fluid" *ngIf="part === 1">
+
+</section>
+<section class="container-fluid" *ngIf="part === 2">
+
+</section>
+<section class="container-fluid" *ngIf="part === 3">
+
+</section>
+<section class="container-fluid" *ngIf="part === 4">
+
+</section>
+<section class="container-fluid" *ngIf="part === 5">
+
+</section>
+<section class="container-fluid" *ngIf="part === 6">
+
+</section>
+<section class="container-fluid" *ngIf="part === 7">
+
+</section>
+<section class="container-fluid" *ngIf="part === 8">
+
+</section>
+<section class="container-fluid" *ngIf="part === 9">
+
+</section>
+<section class="container-fluid" *ngIf="part === 10">
+
+</section>
+<section class="container-fluid" *ngIf="part === 11">
+
+</section>
+<section class="container-fluid" *ngIf="part === 12">
+
+</section>
+<section class="container-fluid">
+  <nav aria-label="...">
+    <ul class="pager">
+      <li *ngIf="part !== 1"><a [routerLink]="['/courses/angular/' + (part - 1)]">Previous</a></li>
+      <li class="disabled" *ngIf="part <= 1"><a>Previous</a></li>
+      <li>{{part}}/12</li>
+      <li *ngIf="part !== 12"><a [routerLink]="['/courses/angular/' + (part + 1)]">Next</a></li>
+      <li class="disabled" *ngIf="part >= 12"><a>Next</a></li>
+    </ul>
+  </nav>
+</section>
