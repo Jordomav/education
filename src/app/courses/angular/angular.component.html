@@ -1,3 +1,55 @@
-<p>
-  angular works!
-</p>
+<section class="container-fluid">
+  <h1 class="text-center">Introduction to Angular</h1>
+  <p class="text-center">Make amazing web apps with HTML, CSS, and TypeScript</p>
+  <p class="text-center">Github repo can be found <a href="https://github.com/Jordomav/angular-intro" target="_blank">here</a>.</p>
+</section>
+<section class="container-fluid" *ngIf="part > 12 || part < 1">
+  <h1 class="text-center">You shouldn't be here you sneaky cheater you :)</h1>
+</section>
+<section class="container-fluid" *ngIf="part === 1">
+  <app-angular-part1></app-angular-part1>
+</section>
+<section class="container-fluid" *ngIf="part === 2">
+  <app-angular-part2></app-angular-part2>
+</section>
+<section class="container-fluid" *ngIf="part === 3">
+  <app-angular-part3></app-angular-part3>
+</section>
+<section class="container-fluid" *ngIf="part === 4">
+  <app-angular-part4></app-angular-part4>
+</section>
+<section class="container-fluid" *ngIf="part === 5">
+  <app-angular-part5></app-angular-part5>
+</section>
+<section class="container-fluid" *ngIf="part === 6">
+  <app-angular-part6></app-angular-part6>
+</section>
+<section class="container-fluid" *ngIf="part === 7">
+  <app-angular-part7></app-angular-part7>
+</section>
+<section class="container-fluid" *ngIf="part === 8">
+  <app-angular-part8></app-angular-part8>
+</section>
+<section class="container-fluid" *ngIf="part === 9">
+  <app-angular-part9></app-angular-part9>
+</section>
+<section class="container-fluid" *ngIf="part === 10">
+  <app-angular-part10></app-angular-part10>
+</section>
+<section class="container-fluid" *ngIf="part === 11">
+  <app-angular-part11></app-angular-part11>
+</section>
+<section class="container-fluid" *ngIf="part === 12">
+  <app-angular-part12></app-angular-part12>
+</section>
+<section class="container-fluid">
+  <nav aria-label="...">
+    <ul class="pager">
+      <li *ngIf="part !== 1"><a [routerLink]="['/courses/angular/' + (part - 1)]">Previous</a></li>
+      <li class="disabled" *ngIf="part <= 1"><a>Previous</a></li>
+      <li>{{part}}/12</li>
+      <li *ngIf="part !== 12"><a [routerLink]="['/courses/angular/' + (part + 1)]">Next</a></li>
+      <li class="disabled" *ngIf="part >= 12"><a>Next</a></li>
+    </ul>
+  </nav>
+</section>

@@ -9,6 +9,7 @@ import {NodeIntroComponent} from './courses/node-intro/node-intro.component';
 import {PhpIntroComponent} from './courses/php-intro/php-intro.component';
 import {RouteNotFoundComponent} from './route-not-found/route-not-found.component';
 import {CodeIgniterComponent} from './courses/code-igniter/code-igniter.component';
+import {AngularComponent} from './courses/angular/angular.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'classes/:tags', component: ClassListComponent },
   { path: 'courses/websitesforbeginners/:part', component: Web4begComponent },
   { path: 'courses/introionic/:part', component: IonicIntroComponent },
+  { path: 'courses/angular/:part', component: AngularComponent },
   { path: 'courses/intronode/:part', component: NodeIntroComponent },
   { path: 'courses/introphp/:part', component: PhpIntroComponent },
   { path: 'courses/codeigniter/:part', component: CodeIgniterComponent },

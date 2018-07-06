@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <h3 class="text-center">Angular Day 2</h3>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <section [innerHtml]="ngRouting" highlight-js-content=".highlight"></section>
+    </div>
+    <div class="col-md-6">
+      <p class="text-center">Using the Angular CLI we are able to generate various amounts of file types. Using the one to the left we can generate a boilerplate routing file to be used by our application. After some modification we will be all set for using routing with Angular.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p class="text-center">Lets edit the src/app/app-routing.module.ts</p>
+      <section [innerHtml]="routingModule" highlight-js-content=".highlight"></section>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p class="text-center">Next lets edit the src/app/app.component.html</p>
+      <section [innerHtml]="appHtml" highlight-js-content=".highlight"></section>
+    </div>
+  </div>
+  <div class="row">
+    <h3 class="text-center">Adding the home page component</h3>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <p class="text-center">First lets again use the Angular CLI to generate a new component for us:</p>
+      <section [innerHtml]="homeComp" highlight-js-content=".highlight"></section>
+    </div>
+    <div class="col-md-6">
+      <p class="text-center">Now we need to update our app-routing.module.ts. Please note that whenever we add a new component and want to be able to navigate to it we need to add the component here:</p>
+      <section [innerHtml]="homeRouting" highlight-js-content=".highlight"></section>
+    </div>
+  </div>
+  <div class="row">
+    <h3 class="text-center">Updating the home page</h3>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <p class="text-center">First lets do the home.component.ts</p>
+      <section [innerHtml]="homeTs" highlight-js-content=".highlight"></section>
+    </div>
+    <div class="col-md-6">
+      <p class="text-center">And now lets do the home.component.html</p>
+      <section [innerHtml]="homeHtml" highlight-js-content=".highlight"></section>
+    </div>
+  </div>
+</div>
