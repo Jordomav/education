@@ -1,0 +1,53 @@
+<h3 class="text-center">Part 1</h3>
+<div class="row">
+  <h4 class="text-center">Installing Stuff</h4>
+  <hr>
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <h4 class="text-center"><a href="https://www.mamp.info/en/" target="_blank">MAMP</a></h4>
+    <div class="text-center">
+      <img src="assets/imgs/tools/mampLogo.png" alt="MAMP Logo" id="mamp">
+    </div>
+    <p class="text-center">MAMP is a great way for us to quickly set up a development server on everyone's machines no matter the operating system. MAMP is a free resource, you can get MAMP Pro if you would like but it is not required. MAMP has PHP and MySql already installed and connected. Everything comes preconfigured out of the box and all we have to do is tell MAMP where to look and make a few quick tweaks and we'll be ready to go.</p>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <h4 class="text-center"><a href="https://codeigniter.com/" target="_blank">CodeIgniter</a></h4>
+    <div class="text-center">
+      <img src="assets/imgs/codeigniter/logo.png" alt="CodeIgniter Logo" id="codeIgniter">
+    </div>
+    <div class="text-center">
+      <a class="btn btn-default" href="https://github.com/bcit-ci/CodeIgniter/archive/3.1.7.zip">Download Zip</a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <h4 class="text-center">Setting up MAMP</h4>
+  <hr>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+    <p class="text-center small-headings">The <code>httpd.conf</code></p>
+    <p class="text-center">First off we need to make one change to MAMPs configuration files. The one in question is <code>/MAMP/conf/apache/httpd.conf</code>. Now lets do a search and replace: <code>AllowOverride None</code> for <code>AllowOverride All</code>. This will simply allow us to do some url rewrites with Apache so that our url looks much prettier.</p>
+    <br>
+    <p class="text-center small-headings">Where to put the code?</p>
+    <p class="text-center">MAMP has a predefined location that we need to place our code in. This is in the <code>/MAMP/htdocs/</code>. We want to put our root directory, where the <code>index.php</code> is, here. Now if you so choose you can start MAMP and see the MAMP info page!</p>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+    <p class="text-center small-headings">The <code>.htaccess</code></p>
+    <p class="text-center">The <code>.htaccess</code> is used by Apache so that we can do the url rewrites. This is now possible because we made the changes to the <code>httpd.conf</code>. So inside our root directory, again where the <code>index.php</code> is, create a <code>.htaccess</code> file and then add the following code to it:</p>
+    <section [innerHtml]="htaccess" highlight-js-content=".highlight"></section>
+  </div>
+</div>
+<div class="row">
+  <h4 class="text-center">What is CodeIgniter?</h4>
+  <hr>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+    <p class="text-center small-headings">Make PHP more tolerable.</p>
+    <p class="text-center">If you've ever worked with vanilla PHP before you know how much of a pain. CodeIgniter allows us quickly generate elegant web applications with ease. Suffice it to say, CodeIgniter makes building applications with PHP much more enjoyable.</p>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+    <p class="text-center small-headings">A simple framework that leaves a small footprint.</p>
+    <p class="text-center">Unlike another exceedingly popular, and indeed fantastic framework, Laravel; CodeIgniter is very minimalistic. It attempts to keep its hands off and only take control when necessary.</p>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+    <p class="text-center small-headings">Work with MySql much easier.</p>
+    <p class="text-center">CodeIgniter has a lot of database functions. This allows us to connect to databases and tables with ease. It also allows us to add, update, delete and retrieve data quickly and easily.</p>
+  </div>
+</div>

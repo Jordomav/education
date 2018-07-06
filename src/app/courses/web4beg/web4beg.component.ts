@@ -1,7 +1,6 @@
-import { Component, OnInit, Directive, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { HighlightJsService } from 'angular2-highlight-js';
 
 @Component({
   selector: 'app-web4beg',
@@ -12,7 +11,7 @@ export class Web4begComponent implements OnInit {
   private sub: any;
   part: number;
 
-  constructor(private route: ActivatedRoute, private el: ElementRef, private service: HighlightJsService) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
