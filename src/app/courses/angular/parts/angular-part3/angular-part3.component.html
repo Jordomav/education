@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="row margin-bottom">
+    <h3 class="text-center">Angular Day 3 - Building a contact app.</h3>
+  </div>
+  <div class="row margin-bottom">
+    <p class="text-center">Today we are going to create a simple contact app that will allow us to: loop over a list of contacts, add a new contact, remove a contact, and update a contact. A contact will have a name, email and phone number.</p>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-6">
+      <section [innerHtml]="genContact" highlight-js-content=".highlight"></section>
+    </div>
+    <div class="col-md-6">
+      <p class="text-center">This will create a contact directory with all of our required files.</p>
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-6">
+      <h5 class="text-center">Update both your routing module and app.component.html to accommodate for the new page.</h5>
+      <section [innerHtml]="routingModule" highlight-js-content=".highlight"></section>
+    </div>
+    <div class="col-md-6">
+      <section [innerHtml]="appHtml" highlight-js-content=".highlight"></section>
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <h4 class="text-center margin-bottom">Creating the Contact class</h4>
+    <div class="col-md-6">
+      <p class="text-center margin-bottom">First off what we need to do is create a class for our Contacts. This will add a <code>contact.ts</code> file to our <code>app/</code> directory.</p>
+      <section [innerHtml]="genContactClass" highlight-js-content=".highlight"></section>
+      <p class="text-center">Creating the class allows us to pre determine what the contact object will look like. If you've done any DB work before think of this as your schema for the contact. It is essentially a map for us and for Angular to know what each contact object should look like. Lets update it to look like the one of the right.</p>
+    </div>
+    <div class="col-md-6">
+      <section [innerHtml]="contactClass" highlight-js-content=".highlight"></section>
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <h4 class="text-center margin-bottom">Creating a mock list of contacts</h4>
+    <p class="text-center margin-bottom">Inside of the <code>app/</code> directory lets create a file called <code>mock-cotacts.ts</code>. There is not a way to do this with the Angular CLI being that it is just a TypeScript file. After creating this make it look like this:</p>
+    <div class="col-md-12">
+      <section [innerHtml]="mockCotacts" highlight-js-content=".highlight"></section>
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <h4 class="text-center margin-bottom">Updating the component and HTML</h4>
+    <div class="col-md-5">
+      <section [innerHtml]="contactComponent" highlight-js-content=".highlight"></section>
+    </div>
+    <div class="col-md-7">
+      <section [innerHtml]="contactHtml" highlight-js-content=".highlight"></section>
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <h4 class="text-center margin-bottom">Deleting a contact</h4>
+    <div class="col-md-7">
+      <section [innerHtml]="contactDelete" highlight-js-content=".highlight"></section>
+      <section [innerHtml]="contactDelFunc" highlight-js-content=".highlight"></section>
+    </div>
+    <div class="col-md-5">
+      <p class="text-center" style="line-height: 40px">You will notice that removing an item from the array is identical to how you would do it with vanilla JavaScript. We pass in the object we are wanting to remove and then get the index of that object in the array and then use <code>splice</code> to remove that item from the array.</p>
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <h4 class="text-center margin-bottom">Adding a new contact to the list</h4>
+    <div class="col-md-5">
+      <p class="text-center">First off we need to update our component and add the following two lines to the page so that we can A) <code>import</code> the contact model and B) so that we can use this to easily create a new empty contact object.</p>
+      <section [innerHtml]="contactCompUpdate" highlight-js-content=".highlight"></section>
+      <p class="text-center">Secondly we need to first generate the next id. Then push the new contact to the array and then reset the <code>newContact</code> object to empty again.</p>
+      <section [innerHtml]="contactAddFunc" highlight-js-content=".highlight"></section>
+    </div>
+    <div class="col-md-7">
+      <section [innerHtml]="contactForm" highlight-js-content=".highlight"></section>
+    </div>
+  </div>
+</div>
